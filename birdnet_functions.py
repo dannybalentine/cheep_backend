@@ -58,7 +58,7 @@ def get_max_confidence_elements(detections):
 
 def get_gpt_writeup(detections):
     import openai
-    openai.api_key = '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'
+    openai.api_key = OPEN_AI_KEY
     input_data = detections
 
     # Initialize an empty list to store dictionaries for each bird
