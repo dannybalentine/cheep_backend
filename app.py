@@ -44,13 +44,11 @@ def upload_audio():
         filename = os.path.join(app.config['DOWNLOAD_FOLDER'], audio_file.filename)
         audio_file.save(filename)
 
-        birdname = get_birdcall(filename)
-
+        birdpacket = get_birdcall(filename)
         
-        #audio, sr = librosa.load(audio_file)
-
-        #duration_seconds = librosa.get_duration(y=audio, sr=sr)
-        return jsonify(birdname)
+         
+        return jsonify(birdpacket)
+    
     except Exception as e:
         return jsonify({'error':str(e)}), 500
 

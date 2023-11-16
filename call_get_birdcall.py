@@ -8,5 +8,4 @@ latitude=-71.0326346
 
 filename='robin.mp3'
 
-result = get_birdcall(filename,longitude,latitude)
-print(result)
+result = get_birdcall(filename)
