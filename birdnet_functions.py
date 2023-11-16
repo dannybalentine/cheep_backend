@@ -6,6 +6,8 @@ from audio.
 
 '''
 
+
+
 def get_birdcall(audio_file):
     from birdnetlib import Recording
     from birdnetlib.analyzer import Analyzer
@@ -58,7 +60,11 @@ def get_max_confidence_elements(detections):
 
 def get_gpt_writeup(detections):
     import openai
-    openai.api_key = OPEN_AI_KEY
+    import os
+    from dotenv import load_dotenv
+    load_dotenv()
+    api_key = os.getenv('OPEN_AI_KEY')
+    openai.api_key = api_key
     input_data = detections
 
     # Initialize an empty list to store dictionaries for each bird
