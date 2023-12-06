@@ -6,6 +6,6 @@ longitude=42.3332111
 
 latitude=-71.0326346
 
-filename='robin.mp3'
+filename='stick.wav'
 
 result = get_birdcall(filename)
