@@ -22,3 +22,6 @@ This Flask application serves as an API for birdcall recognition, leveraging the
    ```bash
    git clone https://github.com/your-username/birdnet-flask-app.git
    cd birdnet-flask-app
+2. Install dependencies:
+    ```bash
+    pip install -r requirements.txt
