@@ -49,8 +49,7 @@ Example using `curl`:
 
 ## License
 
-This project is licensed under the [\`MIT License\`](LICENSE).
-
+This project fauls under the license of [BirdNET-Analyzer-License](https://github.com/kahst/BirdNET-Analyzer/blob/main/LICENSE). 
 
 
 
